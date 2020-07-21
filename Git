@@ -1,0 +1,117 @@
+git status
+
+ADD TO STAGING AREA
+git add filename
+
+TO SAVE CHANGES IN STAGING AREA
+git commit
+
+OPEN FILE IN TEXT EDITOR
+nano filename
+
+Ctrl-K: delete a line.
+Ctrl-U: un-delete a line.
+Ctrl-O: save the file ('O' stands for 'output').
+Ctrl-X: exit the editor.
+
+ADD A MESSAGE
+-m "some message in quotes"
+
+git commit -m "some message in quotes"
+
+AMEND MESSAGE
+git commit --amend - m "new message"
+
+VIEW LOGS HISTORY
+git log
+
+git log path
+
+CHANGE DIRECTORY
+cd directoryname
+
+VIEW DETAILS OF A COMMIT
+git show hashcharacters
+
+git show HEAD
+git show HEAD~1
+
+VIEW WHO MADE WHAT CHANGES
+git annotate filename
+
+COUNT THE NUMBER OF DISTINCT HASHES, NOT THE NUMBER OF LINES
+
+DIFFERENCE BETWEEN CURRENT COMMIT AND PREVIOUS COMMIT
+git diff revision-1..revision-2
+git diff HEAD..HEAD~1
+
+REMOVE A FILE
+git clean -f
+
+git clean -n
+
+SEE FILES IN DIRECTORY
+ls
+
+CHANGE CONFIGURATION
+git config --list --system
+	          --global
+	          --local
+
+CHANGE CONFIGURATION
+git config --global user value
+git config --global user.email email
+git config --global user.name name
+
+UNDO CHANGES NOT COMMITTED
+git checkout -- filename
+
+UNDO CHANGES TO STAGED FILES
+git reset HEAD path/to/file
+git checkout -- filename
+
+VIEW A FILE
+cat filename
+
+REMOVE ALL FILES FROM STAGING AREA
+git reset
+
+PUT THOSE FILES BACK IN PREVIOUS STATE
+git checkout -- .
+
+GET THE NUMBER OF BRANCHES
+git branch
+
+git diff branch-1..branch-2
+
+
+CHANGE TO A DIFFERENT BRANCHES
+git checkout branchname
+
+REMOVE A FILE
+git rm filename
+
+CREATE A BRANCH
+git checkout -b branch-name
+
+MERGE TO BRANCHES
+git merge source destination
+
+CREATE A NEW REPOSITORY
+git init project-name
+
+CLONE A REPOSITORY
+git clone URL
+
+git clone /existing/project newprojectname
+
+SEE WHERE CLONE ORIGINATED
+git remote
+
+ADD AND REMOVE REMOTES
+git remote add remote-name URL
+
+git remote rm remote-name
+
+PULL CHANGES FROM REMOTE REPOSITORY
+git pull remote branch
